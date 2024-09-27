@@ -50,13 +50,9 @@ window.addEventListener('load', function() {
         console.log(`Время загрузки страницы: ${pageLoadTime} мс \nВремя до интерактивного DOM: ${domInteractiveTime} мс \nВремя ответа сервера: ${responseTime} мс`);
 
         const pageTitle = document.title || window.location.pathname;
-        // Формирование текста для эффекта печатания
         const text = `Page loading time: ${pageLoadTime} ms\nDOM interactive time: ${domInteractiveTime} ms\nServer's response time: ${responseTime} ms\n `;
 
-
-        // Текст, который будет печататься (добавляем информацию о текущей странице)
-
-        footerLoadTime.textContent = ''; // Очистка перед началом печати
+        footerLoadTime.textContent = '';
 
         let index = 0;
 
@@ -64,15 +60,15 @@ window.addEventListener('load', function() {
             if (index < text.length) {
                 footerLoadTime.innerHTML += text.charAt(index);
                 index++;
-                setTimeout(typeWriter, 100); // Скорость печати (100 мс на символ)
+                setTimeout(typeWriter, 100);
             } else {
                 setTimeout(() => {
-                    footerLoadTime.classList.add('hidden'); // Исчезновение после печати
-                }, 2000); // Исчезает через 2 секунды после завершения печати
+                    footerLoadTime.classList.add('hidden');
+                }, 2000);
             }
         }
 
-        typeWriter(); // Запуск эффекта печати
+        typeWriter();
     }
 
     if ('performance' in window) {
@@ -91,32 +87,15 @@ window.addEventListener('load', function() {
         console.log('Performance API не поддерживается в этом браузере.');
     }
 });
-// document.addEventListener("DOMContentLoaded", function() {
-//     const text = "Waiting...";
-//     let index = 0;
-//     const speed = 150;  // скорость печати в миллисекундах
-//
-//     function typeEffect() {
-//         if (index < text.length) {
-//             document.querySelector("#Pushin div").innerHTML += text.charAt(index);
-//             index++;
-//             setTimeout(typeEffect, speed);
-//         }
-//     }
-//
-//     // Очищаем текст перед запуском эффекта печати
-//     document.querySelector("#Pushin div").innerHTML = "";
-//     // Запускаем эффект печати
-//     typeEffect();
-// });
+
 window.addEventListener('load', function() {
-    const menuItems = document.querySelectorAll('#menu a'); // Находим все ссылки в меню
-    const currentPage = document.location.pathname.split('/').pop(); // Получаем имя текущей страницы
+    const menuItems = document.querySelectorAll('#menu a');
+    const currentPage = document.location.pathname.split('/').pop();
 
     menuItems.forEach(item => {
-        const linkPage = item.getAttribute('href'); // Получаем href текущей ссылки
+        const linkPage = item.getAttribute('href');
         if (linkPage === currentPage) {
-            item.classList.add('active'); // Добавляем класс active, если ссылки совпадают
+            item.classList.add('active');
         }
     });
 });

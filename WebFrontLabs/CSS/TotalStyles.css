@@ -12,16 +12,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 #cupOfCoffee{
-    /*display: flex;*/
-    /*color: bisque !important;*/
     font-size: 30px;
-    /*padding-left: 215px;*/
     margin-left: 197vh;
     margin-top: 0.4vh;
     position: absolute;
-
-    /*background-color: aqua;*/
-
 }
 
 .fa-telegram{
@@ -37,7 +31,6 @@
 
 #myIdTeg{
     font-size: 14px !important;
-    font-family: "PT Serif", serif;
     font-family: "Wittgenstein", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -105,24 +98,16 @@
     border: 1px solid #333;
     text-align: center;
 
-     font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 500;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 500;
     font-style: normal;
     border: 1px solid ;
-    border: 1px solid ;
-
 
     border-radius: 20%;
     position: absolute;
 }
 
-#main {/*
-    border-bottom: 2px solid #333;
-    border-top: 2px solid #333;*/
+#main {
     display: flex;
 
     width: 13vh;
@@ -130,28 +115,19 @@
     margin-left: 119vh;
     margin-top: 2.5vh;
 
-
     z-index: 100000000 !important;
-    /*background-color: rgba(0, 0, 0, 0);*/
-
-
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 500;
     font-style: normal;
 
-    /* background: #6e6b61; */
-    /* background: #895a24; */
-    /* background: #744c1f; */
     border: 1px solid ;
     border-radius: 20%;
-    /*background-color: rgba(255, 255, 255, 0.1);*/
     color: black;
     background-color: black;
     text-align: right !important;
     position: absolute;
 }
-
 
 .choice {
     text-decoration: none;
@@ -164,17 +140,12 @@
     transform: rotate(360deg);
 }
 
-
 .words {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 23px;
 }
-
-
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -183,7 +154,7 @@ body {
 .grid-table {
     margin-left: 70vh;
     display: grid;
-    grid-template-columns: repeat(2, minmax(50px, 1fr)); /* Две колонки, минимум 100px и максимум 1fr */
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
     gap: 1px;
 
     width: 30%; 
@@ -238,14 +209,14 @@ body {
     65% {border: 1px solid #F2664B; }
     71% {border: 1px solid orangered; }
     78% {border: 1px solid red; }
-    84% {border: 1px solid #8B0000; } /* Dark Red */
+    84% {border: 1px solid #8B0000; }
     91% {border: 1px solid red;}
-    100% {border: 1px solid orangered; } /* Slightly darker red */
+    100% {border: 1px solid orangered; }
 }
 
 #block1, #block2, #main {
-    animation: colorCycle 10s infinite; /* 15 секунд для полного цикла анимации, бесконечное повторение */
-    transition: border 1s ease; /* Плавный переход цвета */
+    animation: colorCycle 10s infinite;
+    transition: border 1s ease;
 }
 
 @keyframes colorCycleTab {
@@ -262,14 +233,14 @@ body {
     65% {border: 2px solid #F2664B; }
     71% {border: 2px solid orangered; }
     78% {border: 2px solid red; }
-    84% {border: 2px solid #8B0000; } /* Dark Red */
+    84% {border: 2px solid #8B0000; }
     91% {border: 2px solid red;}
-    100% {border: 2px solid orangered; } /* Slightly darker red */
+    100% {border: 2px solid orangered; }
 }
 
 .grid-item, #taskList {
-    animation: colorCycleTab 10s infinite !important; /* 15 секунд для полного цикла анимации, бесконечное повторение */
-    transition: border 1s ease !important; /* Плавный переход цвета */
+    animation: colorCycleTab 10s infinite !important;
+    transition: border 1s ease !important;
 }
 
 @keyframes colorCycleFill {
@@ -285,16 +256,16 @@ body {
     65% {color: #F2664B;}
     71% {color: orangered;}
     78% {color: red;}
-    84% {color: #8B0000;} /* Dark Red */
+    84% {color: #8B0000;}
     91% {color: red;}
-    100% {color: orangered;} /* Slightly darker red */
+    100% {color: orangered;}
 }
 #cupOfCoffee, #block1, #block2, #taskList{
-    animation: colorCycleFill 10s infinite !important; /* Анимация изменения цвета фона */
+    animation: colorCycleFill 10s infinite !important;
     transition: color 1s ease;
 }
 #main{
-    animation: colorCycleFill 10s infinite !important; /* Анимация изменения цвета фона */
+    animation: colorCycleFill 10s infinite !important;
     transition: color 1s ease;
 }
 .clickSection {
@@ -302,10 +273,6 @@ body {
     font-size: 14px;
     margin-top: 4px;
     background-color: black;
-    /*background-color: #fff !important;*/
-    /* color: #333; нужно было к тексту чисто применить, не к блокам
-    text-decoration: none; */
-    /* border-style: hidden; */
     cursor: cell;
 }
 
@@ -328,9 +295,9 @@ body {
     65% {text-underline-color: #F2664B;}
     71% {text-underline-color: orangered;}
     78% {text-underline-color: red;}
-    84% {text-underline-color: #8B0000;} /* Dark Red */
+    84% {text-underline-color: #8B0000;}
     91% {text-underline-color: red;}
-    100% {text-underline-color: orangered;} /* Slightly darker red */
+    100% {text-underline-color: orangered;}
 }
 
 
@@ -349,145 +316,20 @@ body {
     65% {background-color:  #F2664B; }
     71% {background-color:  orangered; }
     78% {background-color:  red; }
-    84% {background-color:  #8B0000; } /* Dark Red */
+    84% {background-color:  #8B0000; }
     91% {background-color:  red; }
-    100% {background-color:  orangered; } /* Slightly darker red */
+    100% {background-color:  orangered; }
 }
 
 #main:hover, #block1:hover, #block2:hover {
 
-    animation: colorCycleT 10s infinite !important; /* Анимация изменения цвета фона */
+    animation: colorCycleT 10s infinite !important;
     transition: color 1s ease;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
-
-
-.screen {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background-color: #222; /* Цвет экрана */
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.scratch {
-    position: absolute;
-    width: 4px; /* Начальная ширина царапины */
-    height: 120px; /* Длина царапины */
-    background: linear-gradient(to bottom, transparent 50%, red 100%); /* Градиент крови */
-    border-radius: 2px; /* Закругление */
-    opacity: 0; /* Невидимость по умолчанию */
-    animation: revealScratch 5.3s infinite ; /* Анимация появления */
-
-
-    transform-origin: bottom; /* Сужение к верхней части */
-}
-
-.scratch1 {
-    left: 50%;
-    top: 10%;
-    transform: rotate(-30deg) scaleY(1.2); /* Угол и масштаб */
-    animation-delay: 0.5s; /* Задержка анимации */
-}
-
-.scratch2 {
-    left: 40%;
-    top: 20%;
-    transform: rotate(-15deg) scaleY(1.1);
-    animation-delay: 0.7s;
-}
-
-.scratch3 {
-    left: 60%;
-    top: 20%;
-    transform: rotate(15deg) scaleY(1.1);
-    animation-delay: 0.9s;
-}
-
-.scratch4 {
-    left: 35%;
-    top: 30%;
-    transform: rotate(-5deg) scaleY(1);
-    animation-delay: 1.1s;
-}
-
-.scratch5 {
-    left: 65%;
-    top: 30%;
-    transform: rotate(5deg) scaleY(1);
-    animation-delay: 1.3s;
-}
-
-/* Анимация появления царапин */
-@keyframes revealScratch {
-    0% {
-        height: 0;
-        opacity: 0;
-    }
-    70% {
-        height: 120px;
-        opacity: 1;
-    }
-    100% {
-        height: 120px;
-        opacity: 1;
-        width: 1px; /* Сужение к концу */
-    }
-}
-
-/* Кровавые капли */
-.blood-drip {
-    position: absolute;
-    width: 4px; /* Ширина капли */
-    height: 0; /* Начальная высота */
-    background-color: red; /* Цвет капли */
-    border-radius: 50%; /* Круглая капля */
-    animation: dripAnimation 1s infinite; /* Анимация капли */
-    opacity: 0; /* Невидимость по умолчанию */
-}
-
-.drip1 {
-    left: 40%;
-    top: 48%;
-    animation-delay: 2s;
-}
-
-.drip2 {
-    left: 49%;
-    top: 40%;
-    animation-delay: 2.5s;
-}
-
-.drip3 {
-    left: 60%;
-    top: 48%;
-    animation-delay: 3s;
-}
-
-/* Анимация капли */
-@keyframes dripAnimation {
-    0% {
-        height: 0;
-        opacity: 0;
-    }
-    10% {
-        height: 10px;
-        opacity: 1;
-    }
-    100% {
-        height: 30px; /* Длина капли */
-        opacity: 0; /* Исчезновение капли */
-        transform: translateY(50px); /* Падение капли */
-    }
-}
-
-
-
 
 @keyframes strokeCycleH {
     0% {-webkit-text-stroke: 0.5px #F24E4B;}
@@ -502,14 +344,14 @@ body {
     65% {-webkit-text-stroke: 0.5px #F2664B;}
     71% {-webkit-text-stroke: 0.5px orangered;}
     78% {-webkit-text-stroke: 0.5px red;}
-    84% {-webkit-text-stroke: 0.5px #8B0000;} /* Dark Red */
+    84% {-webkit-text-stroke: 0.5px #8B0000;}
     91% {-webkit-text-stroke: 0.5px red;}
-    100% {-webkit-text-stroke: 0.5px  orangered;} /* Slightly darker red */
+    100% {-webkit-text-stroke: 0.5px  orangered;}
 }
 
 h3 {
-    animation: strokeCycleH 10s infinite; /* 15 секунд для полного цикла анимации, бесконечное повторение */
-    transition: border 1s ease; /* Плавный переход цвета */
+    animation: strokeCycleH 10s infinite;
+    transition: border 1s ease;
 }
 
 
@@ -527,14 +369,14 @@ h3 {
     65% {-webkit-text-stroke: 0.1px #F2664B;}
     71% {-webkit-text-stroke: 0.1px orangered;}
     78% {-webkit-text-stroke: 0.1px red;}
-    84% {-webkit-text-stroke: 0.1px #8B0000;} /* Dark Red */
+    84% {-webkit-text-stroke: 0.1px #8B0000;}
     91% {-webkit-text-stroke: 0.1px red;}
-    100% {-webkit-text-stroke: 0.1px  orangered;} /* Slightly darker red */
+    100% {-webkit-text-stroke: 0.1px  orangered;}
 }
 
  {
-    animation: strokeCycleH 10s infinite; /* 15 секунд для полного цикла анимации, бесконечное повторение */
-    transition: border 1s ease; /* Плавный переход цвета */
+    animation: strokeCycleH 10s infinite;
+    transition: border 1s ease;
 }
 
 #m{
@@ -549,30 +391,18 @@ h3 {
     margin-left: 2.6vh;
 }
 
-
 .taskList {
     margin-top: 0px;
-    /*border: 1px solid #007BFF; !* Синий цвет рамки *!*/
-    border-radius: 5px; /* Скругленные углы */
-    /*background-color: #F8F9FA; !* Светлый фон *!*/
-    /*padding: 10px;*/
+    border-radius: 5px;
     max-height: 200px;
     overflow-y: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Легкая тень */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 .taskItem {
-    /*padding: 3px!important;*/
-
-    /*padding-bottom: 10px;*/
     margin-bottom: 12px;
-    /*margin-top: 8px;*/
-    border-bottom: 1px solid darkred; /* Разделитель между задачами */
+    border-bottom: 1px solid darkred;
     word-wrap: break-word
 }
-/*.taskItem:last-child {*/
-/*    border-bottom: none; !* Убираем разделитель для последнего элемента *!*/
-/*}*/
-
 
 
 #taskList{
@@ -585,7 +415,6 @@ h3 {
     border-radius: 5% !important;
 }
 #tackItem{
-
     border: 2px solid #8B0000 !important;
     justify-content: space-between;
 }
@@ -596,35 +425,19 @@ h3 {
     border-radius: 30%;
     border: 1.4px solid greenyellow;
     background-color: black;
-    /*margin-right: 50vh !important;*/
-    /*margin-top: -1vh;*/
-    /*float: right;*/
-    /*z-index: 100000000000000000000000000000000000 !important;*/
-
-    /*position: absolute;*/
 }
 .delete-button{
-    /*margin-top: -1vh !important;*/
-    /*margin-left: 55vh !important;*/
-    /*margin-left: 1vh;*/
-    /*margin-bottom: 2.5vh !important;*/
-    /*margin-right: 20px !important;*/
     color: red !important;
     border: 1.4px solid red;
     background-color: black;
     border-radius: 30%;
     width: 28px !important;
     height: 28px !important;
-    /*z-index: 100000000000000000000000000000000000 !important;*/
-    /*position: absolute;*/
-    /*float: left;*/
 }
 
 #tail, #head, #dataForm{
-
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    /*font-weight: <weight>;*/
     font-style: normal;
 
 }
@@ -634,16 +447,6 @@ h3 {
     color: white;
 }
 
-/*#taski{*/
-/*    width: 30px;*/
-/*    height: 20px;*/
-/*    background-color: #F2BC9C;*/
-/*}*/
-/*#forComf{*/
-/*    float: left;*/
-/*    width: 3vh !important;*/
-/*    background-color: pink;*/
-/*}*/
 #footerLoadTime{
     /*width: 5vh;*/
     /*height: 2vh;*/
@@ -660,7 +463,7 @@ h3 {
 }
 #footerLoadTime {
     font-family: monospace;
-    white-space: pre-line; /* Сохраняет переносы строк */
+    white-space: pre-line;
     overflow: hidden;
     display: inline-block;
     opacity: 1;
@@ -679,18 +482,13 @@ h3 {
     border-right: 2px solid black;
     animation: typing 5s steps(40, end), blink 0.75s step-end infinite;
     width: 100%;
-    white-space: nowrap; /* Не переносит текст на следующую строку */
+    white-space: nowrap;
 }
 
 
 .clickPoint {
     cursor: pointer;
 }
-
-/*.clickPoint:hover {*/
-/*    background-color: #f2b550 !important;*/
-/*    background-color: #fff !important;*/
-/*}*/
 
 .clickPoint:active {
     background-color: red !important;
@@ -709,10 +507,6 @@ h3 {
     display: none;
     font-size: 14px;
 
-    background-color: darkred !important;
-    /* color: #333; нужно было к тексту чисто применить, не к блокам
-    text-decoration: none; */
-    /* border-style: hidden; */
     cursor: cell;
     background-color: black !important;
     animation: colorCycleT 10s infinite !important;
@@ -730,23 +524,20 @@ h3 {
     position: absolute;
     margin-top: 20px !important;
 }
+
+#subSec0\.1{
+    width: 12vh !important;
+    text-align: center;
+    margin-left: -46px;
+}
 #subSec1\.1{
-    margin-left: -47px ;
+    margin-left: -70px ;
 }
 #subSec2\.1{
     margin-left: -83px !important;
 }
 
-/*#block1{*/
 
-/*}*/
-
-/*#main{*/
-
-/*}*/
-/*#block2{*/
-
-/*}*/
 #preloader {
     font-size: 20px;
     text-align: center;
@@ -759,17 +550,14 @@ h3 {
 }
 
 .comment-block {
-   /* border: 1px solid #ddd;*/
     width: 100vh;
     height: auto;
     font-size: 14px;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    /*background-color: black;*/
     color: black;
 }
-
 
 
 .dots::after {
@@ -819,38 +607,19 @@ h3 {
 #loadMore{
     margin-left: 40vh;
     color: black;
-    /*display: flex;*/
 }
 
-/*#applyFilter{*/
-/*    padding-left: 20vh !important;*/
-/*    display: flex;*/
-/*}*/
 
-
-/*                                                                                                                                                         }*/
-/*#comments {*/
-/* animation: strokeCycleB 10s infinite;*/
-/* transition: border 1s ease; !* Плавный переход цвета *!*/
-/*}*/
 #loadingText{
     margin-left: 40vh;
     color: white;
 }
-
 
 #swiperWords {
     font-size: 23px;
     left: 10px;
     top: 70px;
 }
-
-#footerWhere{
-    margin-left: 0vh;
-    margin-top: 7vh;
-    z-index: 10000000000000000000000000000000000000000000000000000000000;
-}
-
 
 #m, #a, #c{
     font-size: 1.3vw !important;

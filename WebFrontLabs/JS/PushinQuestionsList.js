@@ -1,24 +1,19 @@
-// Получаем форму и контейнер для отображения задач
 const form = document.getElementById('dataForm');
 const taskList = document.getElementById('taskList');
-const pushin = document.getElementById('Pushin'); // Получаем элемент pushin
+const pushin = document.getElementById('Pushin');
 
-// Функция для удаления элемента pushin, если он существует
 function removePushin() {
     if (pushin) {
-        pushin.remove(); // Удаляем элемент pushin
+        pushin.remove();
     }
 }
 
-// Обработка отправки формы
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // предотвращаем перезагрузку страницы
+    event.preventDefault();
 
-    // Получаем значения из полей формы
     const taskName = document.getElementById('taskName').value;
     const taskDesc = document.getElementById('taskDesc').value;
 
-    // Создаем новый элемент задачи
     const taskItem = document.createElement('div');
     taskItem.classList.add('taskItem');
     taskItem.innerHTML = `
@@ -31,37 +26,31 @@ form.addEventListener('submit', function(event) {
         <div style="max-width: 45vh;">${taskDesc}</div>
     `;
 
-    // Удаляем элемент pushin при добавлении задачи
+
     removePushin();
 
-    // Добавляем задачу в контейнер
     taskList.appendChild(taskItem);
 
-    // Очищаем форму после отправки
     form.reset();
 
-    // Обработчик для удаления задачи
     const deleteButton = taskItem.querySelector('.delete-button');
     deleteButton.addEventListener('click', function () {
         taskItem.remove();
         saveTasksToLocalStorage(); // Пересохраняем после удаления
     });
 
-    // Обработчик для зачёркивания текста при нажатии на кнопку "agree"
     const agreeButton = taskItem.querySelector('.agree-button');
     agreeButton.addEventListener('click', function () {
-        const taskText = taskItem.querySelectorAll('div'); // Находим текстовые div'ы
+        const taskText = taskItem.querySelectorAll('div');
         taskText.forEach((text) => {
             text.style.textDecoration = 'line-through';
         });
-        saveTasksToLocalStorage(); // Сохраняем изменения после зачеркивания
+        saveTasksToLocalStorage();
     });
 
-    // Сохраняем задачи в localStorage после добавления новой
     saveTasksToLocalStorage();
 });
 
-// Функция для сохранения задач в localStorage
 function saveTasksToLocalStorage() {
     const tasks = [];
     document.querySelectorAll('.taskItem').forEach(item => {
@@ -72,7 +61,7 @@ function saveTasksToLocalStorage() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// Функция для загрузки задач из localStorage
+
 function loadTasksFromLocalStorage() {
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {
@@ -92,14 +81,13 @@ function loadTasksFromLocalStorage() {
 
             taskList.appendChild(taskItem);
 
-            // Удаляем элемент pushin при загрузке задач
+
             removePushin();
 
-            // Обработчики для кнопок после загрузки из localStorage
             const deleteButton = taskItem.querySelector('.delete-button');
             deleteButton.addEventListener('click', function () {
                 taskItem.remove();
-                saveTasksToLocalStorage(); // Пересохраняем после удаления
+                saveTasksToLocalStorage();
             });
 
             const agreeButton = taskItem.querySelector('.agree-button');
@@ -108,11 +96,10 @@ function loadTasksFromLocalStorage() {
                 taskText.forEach(text => {
                     text.style.textDecoration = 'line-through';
                 });
-                saveTasksToLocalStorage(); // Сохраняем изменения после зачеркивания
+                saveTasksToLocalStorage();
             });
         });
     }
 }
 
-// Загружаем задачи при загрузке страницы
 window.addEventListener('load', loadTasksFromLocalStorage);

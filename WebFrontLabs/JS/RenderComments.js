@@ -81,36 +81,16 @@ document.addEventListener('DOMContentLoaded', function () {
         );
         renderComments(filteredComments);
     }
-
-    // Добавляем обработчик для кнопки фильтрации
     applyFilterButton.addEventListener('click', filterComments);
 
-    // Обработчик для загрузки следующей порции комментариев
     loadMoreButton.addEventListener('click', function() {
         console.log('Кнопка нажата, загружаем комментарии');
         fetchComments();
     });
 
-    // Запускаем запрос за комментариями при загрузке страницы
     fetchComments();
 });
 
 
 
-window.addEventListener('load', function() {
-    // Например, если вы хотите установить активный элемент на основе URL
-    const currentPage = document.location.pathname.split('/').pop();
-
-    if (currentPage === 'html1.html') {
-        const but1 = document.getElementById('main');
-        but1.style.boxShadow = '5px 5px 15px rgba(0, 0, 0, 0.8)';
-
-    } else if (currentPage === 'html2.html') {
-        const but2 = document.getElementById('block1');
-        but2.style.boxShadow = '5px 5px 15px rgba(0, 0, 0, 0.8)';
-    } else if (currentPage === 'html3.html') {
-        const but3 = document.getElementById('block2');
-        but3.style.boxShadow = '5px 5px 15px rgba(0, 0, 0, 0.8)';
-    }
-});
 
