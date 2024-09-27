@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url('https://avatars.mds.yandex.net/i?id=57366d308cc7016433788cf6a401f0f6_l-4889074-images-thumbs&n=13') no-repeat center top;
+    /*background: url('https://avatars.mds.yandex.net/i?id=7ad650205e8849704a75677fbe7fe778_l-10749046-images-thumbs&n=13') no-repeat center top;*/
+    background-size:cover;
+    background-attachment: fixed;
+    top: 0;
+    /*background-size: 1232px 720px;*/
+
+}
+#header{
+    display: block;
+    width: 100%; /* Занимает всю ширину окна */
+    height: 50px;
+    background-color: #000;
+    /*opacity: 60%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #000 !important;
+    border-top: 2px solid #000 !important;
+
+
+    /* background-color: #656771; */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Вверху страницы */
+    left: 0; /* Слева страницы */
+    z-index: 1000; /* На переднем плане */
+    display: flex; /* Используем flexbox для центрирования контента */
+    padding: 0 10px; /* Немного отступов с боков */
+    /*background-image: url('Images/uzor.png');*/
+    outline: none;
+
+
+}
+
+#footer {
+    /*display: block;*/
+    width: 100%; /* Занимает всю ширину окна */
+    height: 45px;
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));*/ /* Градиент от полупрозрачного черного к более насыщенному */
+
+    position: fixed;
+    /*top: 60px !important;*/
+    left: 0 !important;
+    bottom: 15px !important;
+    background-image: url('WebFrontLabs/Images/paper.png') !important;
+    color: red;
+}
+
+.fa-telegram{
+    z-index: 100000000000 !important;
+    background-blend-mode: multiply !important;
+    margin-left: 700px ;
+    margin-top: 21px;
+    color: black;
+}
+
+#phone{
+    padding-left: 18px;
+    margin-top: 15px;
+    color: #000;
+}
+
+#git{
+    padding-left: 40px;
+    color: #000;
+}
+#phoneIcon{
+    color: #000 !important;
+}
+
+#number{
+    padding-left: 6px !important;
+}
+
+#phone{
+    margin-left: 23px !important;
+}
+
+
+
+
+

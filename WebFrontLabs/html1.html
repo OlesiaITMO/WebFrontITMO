@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Files, Application, Links">
+    <meta name="description" content="Приложение, которое будет уведомлять вас об ошибках и битых ссыклках внутри вашей фс.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="CSS/outline.css">
+    <link rel="stylesheet" href="CSS/css1.css">
+</head>
+<body>
+
+<header id="header">
+
+    <div id="main" class="clickPoint" onclick="checkButton('main', 'sectionMain')"><span id="m">Main</span>
+                <div id="sectionMain" class="clickSection">
+                    <a href="html1.html" id="subSec0.1" class="choice">главная</a>
+                </div>
+            </div>
+    <div id="block1" class="clickPoint" onclick="checkButton('block1', 'section1')"><span id="a">TECH STACK</span>
+                <div id="section1" class="clickSection">
+                    <a href="html2.html" id="subSec1.1" class="choice">Сводка</a>
+                </div></div>
+    <div id="block2" class="clickPoint" onclick="checkButton('block2', 'section2')"><span id="c">CHAT WITH US</span>
+                <div id="section2" class="clickSection">
+                    <a href="html3.html" id="subSec2.1" class="choice">Сводные сведения</a>
+                </div></div>
+            <div id="headerBlock"></div>
+    <div id="cupOfCoffee">&#9982;</div>
+
+</header>
+
+<main>
+
+    <h3>
+        Проверка   <br>
+        <span id="inH3">ссылок и багов </span><br>
+        в ваших проектах
+    </h3>
+    <div class="grid-table">
+        <div class="grid-header grid-item">Особенности</div>
+        <div class="grid-header grid-item">Удобство</div>
+        <div class="grid-row grid-item" id="tooMuchL">Установка новых ссылок</div>
+        <div class="grid-row grid-item">Уведомление в тг</div>
+        <div class="grid-row grid-item">Масштабное логирование</div>
+
+        <div class="grid-row grid-item">Отложенная проверка</div>
+    </div>
+
+
+</main>
+
+
+<footer id="footer">
+    <ul>
+        <div id="footerLoadTime"></div>
+        <a class="footerList" href="https://t.me/ITMO_Olesia" target="_blank" title="Chat with me on Telegram">
+            <i class="fab fa-telegram"><span id="myIdTeg">ITMO_Olesia</span></i>
+        </a>
+
+        <a id="git" class="footerList" href="https://github.com/OlesiaITMO" target="_blank" title="View my projects">
+            <i class="fab fa-github"><span id="myIdGit">OlesiaITMO</span></i>
+        </a>
+
+        <span  id="phone" class="footerList"><i class="fas fa-phone" style="color:black;"></i > <span id="number">+7 (921) 881-44-62</span></span>
+
+    </ul>
+
+    <div id="uzor"></div>
+</footer>
+
+    <script src="JS/js.js"></script>
+    <script src="JS/buttons.js"></script>
+</body>
+</html>

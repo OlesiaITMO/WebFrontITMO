@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Files, Application, Links">
+    <meta name="description" content="Приложение, которое будет уведомлять вас об ошибках и битых ссыклках внутри вашей фс.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="CSS/outline.css">
+    <link rel="stylesheet" href="CSS/css1.css">
+    <link rel="stylesheet" href="CSS/cssAdditions.css">
+    <style>
+
+        #taskList {
+            max-width: 80vh;
+            margin-top: 20px;
+            border-radius: 5px;
+            padding-top: 1px !important;
+            padding-left: 8px !important;
+            padding-right: 0px !important;
+            max-height: 200px;
+            overflow-y: auto;
+
+        }
+
+        #taskList{
+            animation: colorCycleTab 10s infinite;
+            transition: border 1s ease;
+        }
+
+        #taskItem {
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 7px !important;;
+            padding-top: 5px !important;
+            margin-top: -0.1vh !important;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header id="header">
+
+    <div id="main" class="clickPoint" onclick="checkButton('main', 'sectionMain')"><span id="m">Main</span>
+        <div id="sectionMain" class="clickSection">
+            <a href="html1.html" id="subSec0.1" class="choice">главная</a>
+        </div>
+    </div>
+    <div id="block1" class="clickPoint" onclick="checkButton('block1', 'section1')"><span id="a">TECH STACK</span>
+        <div id="section1" class="clickSection">
+            <a href="html2.html" id="subSec1.1" class="choice">Стек технологий</a>
+        </div></div>
+    <div id="block2" class="clickPoint" onclick="checkButton('block2', 'section2')"><span id="c">CHAT WITH US</span>
+        <div id="section2" class="clickSection">
+            <a href="html3.html" id="subSec2.1" class="choice">Отзывы и вопросы</a>
+        </div></div>
+    <div id="headerBlock"></div>
+    <div id="cupOfCoffee">&#9982;</div>
+</header>
+
+<main>
+    <form id="dataForm" style="margin-top: 5vh; ">
+        <label for="taskName">Представьтесь:</label><br>
+        <input type="text" id="taskName" name="taskName" required><br><br>
+
+        <label for="taskDesc">Вопрос:</label><br>
+        <textarea id="taskDesc" name="taskDesc" rows="4" cols="50" placeholder="Введите описание задачи"></textarea><br><br>
+
+        <input type="submit" value="Добавить">
+
+    </form>
+
+    <div id="resultContainer" style="position: absolute; margin-left: 90vh; margin-top: -38vh !important; ">
+        <div id="taskList" style="margin-left: 5vh; margin-top: 5vh"><div id="Pushin"><img  src="Images/pngwing.com.png" alt="Pushin" style="width: 30%; height: 80%; margin-top: 2vh; margin-left: 28vh"  ><div style="color: white; margin-left: 33vh; margin-top: -1vh" class="dots" >Waiting</div></div><div id="taskItem"></div></div>
+
+    </div>
+
+    <div id="preloader" style="display: none;"></div>
+    <div>
+        <label for="filter" id="nameFilt"></label>
+        <input type="text" id="filter" placeholder="Input name or email">
+        <button id="applyFilter">Apply filter</button>
+    </div>
+    <div id="comments"></div>
+    <button id="loadMore" style="display: none; ">Загрузить ещё</button>
+    <div id="loadingText" >Waiting<span class="dots"></span></div>
+
+</main>
+
+
+<footer id="footer">
+    <ul>
+        <div id="footerLoadTime" style="width: 225px !important;"></div>
+
+
+
+        <a id="TG" class="footerList" href="https://t.me/ITMO_Olesia" target="_blank" title="Chat with me on Telegram">
+            <i class="fab fa-telegram"><span id="myIdTeg">ITMO_Olesia</span></i>
+        </a>
+
+        <a id="git" class="footerList" href="https://github.com/OlesiaITMO" target="_blank" title="View my projects">
+            <i class="fab fa-github"><span id="myIdGit">OlesiaITMO</span></i>
+        </a>
+
+        <span  id="phone" class="footerList"><i class="fas fa-phone" style="color:black;"></i > <span id="number">+7 (921) 881-44-62</span></span>
+
+    </ul>
+
+
+
+    <div id="uzor"></div>
+
+</footer>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<script src="JS/js2.js"></script>
+<script src="JS/TimeLoading.js"></script>
+<script src="JS/TypeEffect.js"></script>
+<script src="JS/buttons.js"></script>
+<script src="JS/js.js"></script>
+</body>
+</html>

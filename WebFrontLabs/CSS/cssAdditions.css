@@ -1,0 +1,54 @@
+
+/*#TG{*/
+/*    position: absolute;*/
+/*    margin-left: 11vh;*/
+/*    margin-top: 7vh;*/
+/*}*/
+/*#git{*/
+/*    margin-left: 11vh;*/
+/*}*/
+.fa-telegram{
+    z-index: 100000000000 !important;
+    background-blend-mode: multiply !important;
+    margin-left: 142vh;
+    margin-top: 5vh;
+    font-size: 11.5px;
+}
+
+#phone{
+    padding-left: 2vh;
+    margin-top: 4vh;
+    color: #000;
+    font-size: 11.5px;
+}
+
+#git{
+    padding-left: 0.3vh;
+    color: #000;
+    font-size: 11.5px;
+    margin-left: 1vh;
+}
+#phoneIcon{
+    color: #000 !important;
+    margin-left: 2vh;
+    font-size: 11.5px;
+}
+
+#number{
+    padding-left: 0vh !important;
+    font-size: 11.5px;
+}
+
+#myIdTeg{
+    font-size: 11.5px !important;
+}
+
+#myIdGit{
+    font-size: 11.5px !important;
+}
+#phone{
+    font-size: 11.5px !important;
+    padding: 1vh !important;
+}
+
+
