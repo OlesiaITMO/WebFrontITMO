@@ -96,6 +96,7 @@ h3{
 
 
 
+
 @media screen  and (max-width: 350px){
     #m{
         font-size: 5px !important;
@@ -239,7 +240,38 @@ h3{
     margin-left: 2vh !important;
 }
 
-
+@media screen  and (max-width: 500px){
+    #main{
+        margin-left: 0vh !important;
+        width: 5vh;
+        height: 3vh;
+    }
+    #block1{
+        margin-left: 30vh !important;
+        width: 2vh;
+        height: 2vh;
+    }
+    #block2{
+        margin-left: 60vh !important;
+        width: 6vh;
+        height: 3vh;
+    }
+    #m{
+        font-size: 12px !important;
+    }
+    #a{
+        font-size: 12px !important;
+    }
+    #c{
+        font-size: 12px !important;
+    }
+    #hka{
+        margin-left: 40vh !important;
+    }
+    .grid-table{
+        margin-left: 40vh !important;
+    }
+}
 
 
 

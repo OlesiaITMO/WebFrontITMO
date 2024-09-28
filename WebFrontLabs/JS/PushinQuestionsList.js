@@ -36,7 +36,7 @@ form.addEventListener('submit', function(event) {
     const deleteButton = taskItem.querySelector('.delete-button');
     deleteButton.addEventListener('click', function () {
         taskItem.remove();
-        saveTasksToLocalStorage(); // Пересохраняем после удаления
+        saveTasksToLocalStorage();
     });
 
     const agreeButton = taskItem.querySelector('.agree-button');
